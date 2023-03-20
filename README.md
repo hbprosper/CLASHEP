@@ -100,9 +100,8 @@ In the above the package CLASHEP has been downloaded into a directory called *tu
 
 #### Step 5
 
-Open a new terminal window and run the jupyter notebook in that window (in blocking mode).
+Open a new terminal window, navigate to the parent directory that contains CLASHEP, and run the jupyter notebook in that window (in blocking mode).
 ```bash
-	cd $HOME/tutorials
 	jupyter notebook
 ```
 If all goes well, the jupyter notebook will appear in your default browser. 
