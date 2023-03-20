@@ -74,4 +74,4 @@ Install root, python, numpy, …
 ```
 	conda install –c conda-forge root
 ```
-If all goes well, this will install a recent version of the (ROOT)[https://root.cern.ch] from CERN.
+If all goes well, this will install a recent version of the [https://root.cern.ch](ROOT) from CERN.
