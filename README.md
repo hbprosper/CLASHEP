@@ -58,16 +58,20 @@ After installing miniconda3, It is a good idea to update conda using the command
 ```bash
 conda update conda
 ```
-Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *clashep*, containing the __root__ package from CERN, plus a large subset of the packages in the conda system, using the command>
+#### Step 1 
+Assuming conda is properly installed and initialized on your laptop, you can create an environment, here called *clashep*. 
 ```bash
-conda create -c conda-forge --name clashep root
+conda create --name clashep
 ```
-Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, as of this writing __pytorch__ is not available by default. In order to install a missing packages, first be sure to choose the conda environment into which the package is to be installed. First activate the desired environment, by doing, for example,
+and activate it by doing
 ```bash
 conda activate clashep
 ```
-Later, in order to update root together with a consistent set of packages do
-```bash
-conda update root
+You need create the environment only once, but you nust activate and environment whenever you create a new terminal window.
+
+#### Step 2 
+Install root, python, numpy, …
 ```
-taking care to do so in the desired conda environment, here __clashep__.
+	conda install –c conda-forge root
+```
+If all goes well, this will install a recent version of the (ROOT)[https://root.cern.ch] from CERN.
