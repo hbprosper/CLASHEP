@@ -74,4 +74,36 @@ Install root, python, numpy, …
 ```
 	conda install –c conda-forge root
 ```
-If all goes well, this will install a recent version of the [https://root.cern.ch](ROOT) from CERN.
+If all goes well, this will install a recent version of the [ROOT](https://root.cern.ch) package from CERN as well as *Python* and several Python modules including *numpy*.
+
+#### Step 3
+Install *pytorch*, *matplotlib*, *scikit-learn*, etc.
+```bash
+	conda install –c conda-forge pytorch
+	conda install –c conda-forge matplotlib
+	conda install –c conda-forge scikit-learn
+	conda install –c conda-forge pandas
+	conda install –c conda-forge sympy
+	conda install –c conda-forge imageio
+	conda install –c conda-forge jupyter
+```
+
+#### Step 4
+Install __git__ if it is not yet on your system, then download the CLASHEP package.
+```bash
+	conda install –c conda-forge git
+	mkdir tutorials
+	cd tutorials
+	git clone https://github.com/hbprosper/CLASHEP
+```
+In the above the package CLASHEP has been downloaded into a directory called *tutorials*.
+
+#### Step 5
+
+Open a new terminal window and run the jupyter notebook in that window (in blocking mode).
+```bash
+	cd $HOME/tutorials
+	jupyter notebook
+```
+If all goes well, the jupyter notebook will appear in your default browser. 
+Navigate to the CLASHEP directory and under the *Files* menu item, click on the notebook *test.ipynb* and execute it. This notebook tries to import several Python modules. If it does so without error messages, you are ready to try out the other notebooks.
