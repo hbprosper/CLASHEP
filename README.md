@@ -118,11 +118,12 @@ Navigate to the CLASHEP directory and under the *Files* menu item, click on the 
 | 05_profile_likelihood     | calculation of profile likelihood for a signal/background problem |
 
 
-### Statistics
+### Machine Learning
 | __notebook__   | __description__     |
 | :---          | :---        |
 | hzz4l_sklearn         | classification with AdaBoost     |
 | hzz4l_pytorch    | classification with a simple deep neural network (DNN) |
 | autoencoder1d    | map SDSS galaxy/quasar data to 1d using an autoencoder |
 | mnist_cnn        | classification of MNIST digits using a CNN |
-| 01_phantom..., 02_phantom..., 03_phantom... | infer parameters of a 2-parameter cosmological model using simulation-based inference |
+| 01_phantom..., 02_phantom..., 03_phantom... | infer parameters of a 2-parameter cosmological model using simulation-based inference.
+The first notebook generates the simulated Type 1a data; the 2nd notebook performs the simulaiton-based inference, while the 3rd notebook checks the coverage of the confidence sets. The 2-parameter cosmological model is described in phantom_model.ipynb|
