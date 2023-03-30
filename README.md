@@ -67,7 +67,7 @@ and activate it by doing
 ```bash
 conda activate clashep
 ```
-You need create the environment only once, but you nust activate the desired environment whenever you create a new terminal window.
+You need create the environment only once, but you must activate the desired environment whenever you create a new terminal window.
 
 #### Step 2 
 Install root, python, numpy, …
