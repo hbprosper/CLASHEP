@@ -297,12 +297,8 @@ class BDT:
             return results[0]
 
     def predict_proba(self, x, numTrees=-1, like_scikit_learn=False):
-        if like_scikit_learn:
-            f = self.decision_function(x, numTrees, like_scikit_learn)
-            return 1 / (1 + np.exp(-f))
-        else:
-            f = self.decision_function(x, numTrees)
-            return 1 / (1 + np.exp(-2*f))
+        f = self.decision_function(x, numTrees, like_scikit_learn)
+        return 1 / (1 + np.exp(-f))
     
     def printTree(self, itree, 
                   node=None, depth=0):
